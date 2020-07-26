@@ -1,4 +1,4 @@
 #!/bin/bash
-echo "Installing Spotify..."
+echo 'Installing Spotify...'
 echo `sudo snap install spotify`
-echo "Done"
+echo 'Done.'
