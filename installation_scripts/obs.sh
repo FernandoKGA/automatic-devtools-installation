@@ -7,4 +7,5 @@ then
 fi
 echo `sudo apt-get update`
 echo `sudo apt-get install obs-studio`
+echo 'To initialize OBS run: obs'
 echo 'Done.'
