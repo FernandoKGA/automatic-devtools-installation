@@ -6,24 +6,34 @@ then
     #run all
     if [ "$1" = "all" ]
     then
-        for script in ./installation_scripts/*.sh
-        do
-            echo `sudo "$script"`
-        done
+        #discord.sh  
+        #git.sh  
+        #java-14.sh  
+        #julia-lang.sh  
+        #net-core-5.sh  
+        #node.sh  
+        #nvm.sh  
+        #obs.sh  
+        #spotify.sh  
+        #vscode.sh  
+        #yarn.sh
+
+        echo `sudo ./installation_scripts/discord.sh`
+        echo `sudo ./installation_scripts/git.sh`
+        echo `sudo ./installation_scripts/java-14.sh`
+        echo `sudo ./installation_scripts/julia-lang.sh`
+        echo `sudo ./installation_scripts/net-core-5.sh`
+        echo `sudo ./installation_scripts/obs.sh`
+        echo `sudo ./installation_scripts/spotify.sh`
+        echo `sudo ./installation_scripts/vscode.sh`
+
+        #nvm needs to be installed before
+        echo `sudo ./installation_scripts/nvm.sh`
+        echo `sudo ./installation_scripts/node.sh`
+        echo `sudo ./installation_scripts/yarn.sh`
     else
         echo 'Nothing here yet.'
     fi
-    #discord.sh  
-    #git.sh  
-    #java-14.sh  
-    #julia-lang.sh  
-    #net-core-5.sh  
-    #node.sh  
-    #nvm.sh  
-    #obs.sh  
-    #spotify.sh  
-    #vscode.sh  
-    #yarn.sh
 else
     echo 'List of programs to install:'
     echo ''
